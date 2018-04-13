@@ -1,0 +1,25 @@
+{
+    "name": "custom-link",
+    "version": "1.0.0",
+    "description": "自定制react-router中的Link组件",
+    "main": "index.js",
+    "scripts": {
+        "build": "cd src && npm install && npm run build"
+    },
+    "author": "liyongleihf2006",
+    "license": "ISC",
+    "keywords": [
+        "react",
+        "react-router",
+        "Link",
+        "CustomLink",
+        "custom-link"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liyongleihf2006/custom-link.git"
+    },
+    "bugs": {
+        "url": "https://github.com/liyongleihf2006/custom-link/issues"
+    }
+}
