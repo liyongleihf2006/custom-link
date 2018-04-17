@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>custom-link</title>
+</head>
+<body>
+    <div id="example"></div>
+    <hr/>
+    <h4>我写这个Link插件的扩展主要是以下目的</h4>
+    <ol>
+        <li>
+            我想要连续多次点击某个Link的时候,路由的访问记录不要每次都保存到history中,只保留第一次的就好了
+        </li>
+        <li>
+            link我不想写死为一个a标签,我希望其是任意元素或者是任意组合元素,触发方式是任意事件
+        </li>
+        <li>
+            我顺便在demo中写了一个不通过Link的事件来切换路由的办法,我觉得大部分项目中都可能是用得到的
+        </li>
+        <li>
+            我顺便在这个扩展插件中扩展了一个叫做isPathEqual的方法,是用来判断两个路由是不是等价的
+        </li>
+    </ol>
+<script type="text/javascript" src="main.ff78.bundle.js"></script></body>
+</html>
