@@ -2,7 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import CustomLink, { isPathEqual } from "custom-link";
+import CustomLink from "custom-link";
+import isHistoryPathEqual from "ishistorypathequal";
 const customHistory = createBrowserHistory();
 const CustomLinkExample = () => {
     return (
@@ -17,7 +18,7 @@ const CustomLinkExample = () => {
                                 const { location } = history;
                                 return (<button onClick={() => {
                                     const to = "/";
-                                    if (!isPathEqual(to, location)) {
+                                    if (!isHistoryPathEqual(to, location)) {
                                         history.push(to);
                                     } else {
                                         /* //打开这个注释,那么每次都会重新刷新对应的路由组件，否则当连续访问同一个路由则只刷新一次
@@ -33,7 +34,7 @@ const CustomLinkExample = () => {
                                 const { history } = router;
                                 const { location } = history;
                                 return (<button onClick={() => {
-                                    if (!isPathEqual(to, location)) {
+                                    if (!isHistoryPathEqual(to, location)) {
                                         history.push(to);
                                     } else {
                                         /* //打开这个注释,那么每次都会重新刷新对应的路由组件，否则当连续访问同一个路由则只刷新一次
@@ -52,7 +53,7 @@ const CustomLinkExample = () => {
             <button onClick={() => {
                 const to = "/about";
                 const { location } = customHistory;
-                if (!isPathEqual(to, location)) {
+                if (!isHistoryPathEqual(to, location)) {
                     customHistory.push(to);
                 } else {
                     /* //打开这个注释,那么每次都会重新刷新对应的路由组件，否则当连续访问同一个路由则只刷新一次

@@ -77,20 +77,3 @@ class CustomLink extends React.Component {
 }
 
 export default CustomLink;
-/**
- * 判断传入的两个路径是否相同
- * @param {string|object} path1 
- * @param {string|object} path2 
- * @return {boolean} 
- */
-function isPathEqual(path1,path2){
-  return getHref(path1)===getHref(path2);
-  function getHref(to){
-    const location =
-    typeof to === "string"
-      ? createLocation(to, null, null, history.location)
-      : to;
-    return createPath(location);
-  }
-}
-export {isPathEqual};

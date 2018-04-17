@@ -27,6 +27,7 @@
     "react-loader": "^2.4.3"
   },
   "dependencies": {
+    "ishistorypathequal":"^1.0.0",
     "custom-link": "^1.0.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
